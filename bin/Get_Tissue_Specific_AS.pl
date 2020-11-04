@@ -288,7 +288,6 @@ while (<I>){
     } # if defined $TOTAL{$ev}
 }
 
-if (defined $strict) {$strict=~s/\-//;}
 print "$v: min_dPSI>$min_dPSI, min_dPSI_glob>$min_dPSI_glob, N_groups $Nt, min_rep $min_rep";
 print ", noVLOW" if $noVLOW;
 print ", TrulyAS" if $use_truly;
