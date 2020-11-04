@@ -12,11 +12,11 @@ Code associated with the PastDB publication (Martin et al, 2020).
   
 * Scripts in bin (all perl scripts contain a help option on how to be run):
 
-  - Get_Event_Stats.pl: to calculate general statistics per AS event from an INCLUSION table.
-  - Get_PanAS_Events.pl: to define PanAS events.
-  - Get_Tissue_Specific_AS.pl: to get tissue-specific AS events.
-  - Get_Tissue_Specific_GE.pl: to get genes with tissue-specific expression.
-  - Quantify_AS_by_Subsampling.pl: calculate the fraction of genes that are alternatively spliced by event type.
+  - Get_Event_Stats.pl: to calculate general statistics per AS event from any INCLUSION table.
+  - Get_PanAS_Events.pl: to define PanAS events from any INCLUSION table.
+  - Get_Tissue_Specific_AS.pl: to get tissue-specific AS events from any INCLUSION table.
+  - Get_Tissue_Specific_GE.pl: to get genes with tissue-specific expression from any cRPKM/TPM table.
+  - Quantify_AS_by_Subsampling.pl: calculate the fraction of genes that are alternatively spliced by event type from an INCLUSION table.
   - Calculate_SS_SCORES_From_PWMs.R: to calculate PWM-based splice site scores.
   - Pipeline_Get_Chain_Aln.sh: bash pipeline to obtain liftOver files.
   - Get_Results_From_Liftover.pl: used to parse the pairwise liftover outputs
