@@ -100,9 +100,11 @@ $output_file.="-Median" if $median;
 $output_file.="-Strict" if $strict;
 $output_file.="$min_dPSI_strict" if $strict;
 
-open (O, ">$output_file-PastDB.tab") if $print;
-print O "GENE\tEventID\tCOORD\tLENGTH\tFullCO\tCOMPLEX\tTissue\tDirection\tN_Rep\tTotal_N_others\tAv_Tis\tAv_Others\tdPSI\t".
-    "SD_Tis\tSD_Others\tMin_Others\tMax_Others\tValid_Tis\n";
+if (defined $print){
+    open (O, ">$output_file-PastDB.tab");
+    print O "GENE\tEventID\tCOORD\tLENGTH\tFullCO\tCOMPLEX\tTissue\tDirection\tN_Rep\tTotal_N_others\tAv_Tis\tAv_Others\tdPSI\t".
+       "SD_Tis\tSD_Others\tMin_Others\tMax_Others\tValid_Tis\n";
+}
 
 ### Creates the files for each test tissues
 my @TEST_TIS;
@@ -275,8 +277,10 @@ while (<I>){
 		
 		if ($dir && abs($dPSI_tis1)>=$min_dPSI_glob){
 		    $tally{$tis1}{$dir}++; # keeps the count of tissue-specific
-		    print O "$pre_line\t$tis1\t$dir\t$tot{$ev}{$tis1}\t$real_total\t$av{$ev}{$tis1}\t$av_others\t$dPSI_tis1\t".
-			"$SD{$ev}{$tis1}\t$SD_others\t$min_others\t$max_others\t$valid_samples\n";
+                    if (defined $print){
+		         print O "$pre_line\t$tis1\t$dir\t$tot{$ev}{$tis1}\t$real_total\t$av{$ev}{$tis1}\t$av_others\t$dPSI_tis1\t".
+			   "$SD{$ev}{$tis1}\t$SD_others\t$min_others\t$max_others\t$valid_samples\n";
+                    }  
 		}
 	    }
 	}
