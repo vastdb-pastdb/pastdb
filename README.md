@@ -1,4 +1,4 @@
-## PastDB scripts
+## PastDB scripts and associated data
 
 Code associated with the PastDB publication (Martin et al, 2020).
 
@@ -92,4 +92,6 @@ Code associated with the PastDB publication (Martin et al, 2020).
     - gene_cluster_file-araTha10_ce11_dm6_hg38.gz (286K)
     - EX_clusters-int2b.tab (3.3M)
 
+
+* For any further enquires, please feel free to contact Manuel Irimia (mirimia@gmail.com) and/or Guiomar Martin (guiomarm@igc.gulbenkian.pt)
 
