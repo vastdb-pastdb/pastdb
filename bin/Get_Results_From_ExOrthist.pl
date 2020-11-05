@@ -49,7 +49,7 @@ my %has_cluster; my %has_cluster1; my %has_cluster2;
 
 foreach my $sp (@SPECIES){
     ### 3) Loads ONTO information. Mainly to analyze 5' UTR events separately
-    my $onto_file = "ONTOs/$sp"."_ONTO_all-v2_3.tab";
+    my $onto_file = "ONTOs/$sp"."_ONTO_all-v3.tab";
     open (ONTO, $onto_file) || die "Cannot open $onto_file\n";
     while (<ONTO>){
 	chomp;
