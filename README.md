@@ -23,7 +23,7 @@ Code and data associated with the PastDB web and publication (Martin et al, 2020
   - `Get_Results_From_ExOrthist.pl`: used to perform the 4-way overlap between core AS sets.
 
 
-* Files from PastDB: the main data files used for the analyses are available for [download in PastDB](http://pastdb.crg.eu/wiki/Downloads)
+* Files from PastDB: the main data files used for the analyses are available for [download in PastDB](http://pastdb.crg.eu/wiki/Downloads), and are also copied here:
 
   - AS events:
     - [EVENTS table](http://vastdb.crg.eu/downloads/araTha10/EVENT_INFO-araTha10.tab.gz): Information about AS event coordinates and sequences. TAIR10 asssembly.
