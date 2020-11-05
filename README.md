@@ -25,12 +25,40 @@ Code associated with the PastDB publication (Martin et al, 2020).
 
 * Files from PastDB: the main data files used for the analyses are available for [download in PastDB](http://pastdb.crg.eu/wiki/Downloads)
 
-  - General files:
-    - AllE
+  - AS events:
+    - [EVENTS table](http://vastdb.crg.eu/downloads/araTha10/EVENT_INFO-araTha10.tab.gz): Information about AS event coordinates and sequences. TAIR10 asssembly.
+    - [MAIN PSI table](http://vastdb.crg.eu/downloads/araTha10/PSI_TABLE-araTha10.tab.gz): Inclusion patterns of AS events across tissues, cell types and developmental stages (main PSI plot).
+    - [ABIOTIC PSI table](http://vastdb.crg.eu/downloads/araTha10/PSI_TABLE-araTha10-40-ABIOTIC-v251.tab.gz): Inclusion patterns of AS events in ABIOTIC stress experiments (special dataset).
+    - [BIOTIC PSI table](http://vastdb.crg.eu/downloads/araTha10/PSI_TABLE-araTha10-18-BIOTIC-v251.tab.gz): Inclusion patterns of AS events in BIOTIC stress experiments (special dataset).
+    - [LIGHT PSI table](http://vastdb.crg.eu/downloads/araTha10/PSI_TABLE-araTha10-21-LIGHT-v251.tab.gz): Inclusion patterns of AS events in LIGHT experiments (special dataset).
+    - [SPL_FACTORS PSI table](http://vastdb.crg.eu/downloads/araTha10/PSI_TABLE-araTha10-33-SPL_FACTORS-v251.tab.gz): Inclusion patterns of AS events upon SPLICING FACTOR disruption (special dataset).
+    
+  - Event features:
+    - [SPLICE SITES table](http://vastdb.crg.eu/downloads/araTha10/SPLICE_SITE_SCORES-araTha10.tab.gz): Sequences and strength scores of 5' and 3' splice sites of alternative exons.
+    - [PCR VALIDATION table](http://vastdb.crg.eu/downloads/araTha10/PCR_PRIMERS-araTha10.tab.gz): Suggested primer sequences and expected band lengths for validation of AS events by RT-PCR.
+    
+  - Protein impact:
+    - [PROTEIN IMPACT table](http://vastdb.crg.eu/downloads/araTha10/PROT_IMPACT-araTha10-v3.tab.gz): Effect of the AS event in the open reading frame of the transcript. Version v3.
+    - [PROTEIN ISOFORMS](http://vastdb.crg.eu/downloads/araTha10/PROT_ISOFORMS-araTha10.tab.gz): Mappings of events to ProteinIDs.
+    - [DOMAINS table (PFAM)](http://vastdb.crg.eu/downloads/araTha10/PROT_PFAM-araTha10.tab.gz): Mappings to Pfam domains
+    - [DOMAINS table (PROSITE)](http://vastdb.crg.eu/downloads/araTha10/PROT_PROSITE-araTha10.tab.gz): Mappings to PROSITE domains.
+    - [PROTEIN DISORDERED REGIONS table](http://vastdb.crg.eu/downloads/araTha10/PROT_DISORDER-araTha10.tab.gz): Intrinsic disorder rates for A, C1 and C2 exons, using disopred3.
+    
+  - Genes:
+    - [GENES table](http://vastdb.crg.eu/downloads/araTha10/GENE_INFO-araTha10.tab.gz): Information about gene names, descriptions, genomic coordinates and biotypes.
+    - [MAIN EXPRESSION table](http://vastdb.crg.eu/downloads/araTha10/EXPRESSION_TABLE-araTha10.tab.gz): Gene expression across tissues, cell types and developmental stages. Measured in cRPKM and in raw reads (main GE plot).
+    - [ABIOTIC EXPRESSION table](http://vastdb.crg.eu/downloads/araTha10/cRPKM-araTha10-40-ABIOTIC-NORM.tab.gz): Gene expression in ABIOTIC stress experiments (special dataset).
+    - [BIOTIC EXPRESSION table](http://vastdb.crg.eu/downloads/araTha10/cRPKM-araTha10-18-BIOTIC-NORM.tab.gz): Gene expression in BIOTIC stress experiments (special dataset).
+    - [LIGHT EXPRESSION table](http://vastdb.crg.eu/downloads/araTha10/cRPKM-araTha10-21-LIGHT-NORM.tab.gz): Gene expression in LIGHT experiments (special dataset).
+    - [SPL_FACTORS EXPRESSION table](http://vastdb.crg.eu/downloads/araTha10/cRPKM-araTha10-33-SPL_FACTORS-NORM.tab.gz): Gene expression upon SPLICING FACTOR disruption (special dataset).
+    - [GENE-EVENTS table](http://vastdb.crg.eu/downloads/araTha10/EVENTID_to_GENEID-araTha10.tab.gz): Table relating genes to AS events.
+
+  - Samples:
+    - [SAMPLE_INFO table](http://vastdb.crg.eu/downloads/araTha10/SAMPLE_INFO-araTha10.tab.gz): SRA identifiers and other information related to RNA-seq data used in this database.
   
 
 
-* Files in data folder:
+* Files in data/ folder:
 
   - General files:
     - AllEvents_for_comparison-Ath.txt.gz (1.3M)
