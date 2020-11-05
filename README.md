@@ -23,14 +23,18 @@ Code associated with the PastDB publication (Martin et al, 2020).
   - `Get_Results_From_ExOrthist.pl`: used to perform the 4-way overlap between core AS sets.
 
 
+* Files from PastDB: the main data files used for the analyses are available for [download in PastDB](http://pastdb.crg.eu/wiki/Downloads)
+
+  - General files:
+    - AllE
+  
+
+
 * Files in data folder:
 
   - General files:
     - AllEvents_for_comparison-Ath.txt.gz (1.3M)
     - Ath.Event-Gene.IDs.txt (9.7M)
-
-  - Config file for tissue-specific analyses:
-    - config_for_TS_Ath.txt (551B)
 
   - Splice sites to calculate SS scores based on PWMs:
     - Annotated_ACCEPTORS-Ath.fasta.gz (1.2M)
