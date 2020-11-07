@@ -59,6 +59,7 @@ Code and data associated with the PastDB web and publication (Martin et al, 2020
   - General files:
     - AllEvents_for_comparison-Ath.txt.gz (1.3M)
     - Ath.Event-Gene.IDs.txt (9.7M)
+    - Stress_vs_Tissues-input_table.tab (5.1M)
 
   - Splice sites to calculate SS scores based on PWMs:
     - Annotated_ACCEPTORS-Ath.fasta.gz (1.2M)
