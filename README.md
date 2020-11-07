@@ -3,20 +3,16 @@
 Code and data associated with the PastDB web and publication (Martin et al, 2020). For any further enquires, please feel free to contact Manuel Irimia (mirimia@gmail.com) and/or Guiomar Martin (guiomarm@igc.gulbenkian.pt)
 
 ------
-
-* Pipeline to obtain abiotic and stress core AS sets:
-
-
-* Pipeline to obtain abiotic and stress core GE sets:
-
   
-* Scripts in bin (all perl scripts contain a help option on how to be run):
+* Scripts in bin (all perl scripts contain a help option on how to be run and internal comments):
 
   - `Get_Event_Stats.pl`: to calculate general statistics per AS event from any INCLUSION table.
   - `Get_PanAS_Events.pl`: to define PanAS events from any INCLUSION table.
+  - `Get_Stress_Cores.pl`: to get abiotic and biotic stress AS core sets, as well as the associated control sets.
   - `Get_Tissue_Specific_AS.pl`: to get tissue-specific AS events from any INCLUSION table.
   - `Get_Tissue_Specific_GE.pl`: to get genes with tissue-specific expression from any cRPKM/TPM table.
   - `Quantify_AS_by_Subsampling.pl`: calculate the fraction of genes that are alternatively spliced by event type from an INCLUSION table.
+  - `Get_Plots_Stress_vs_Tissues.R`: used to plot Figure 5c (comparing stress vs tissue AS contributions in the four species).
   - `Calculate_SS_SCORES_From_PWMs.R`: to calculate PWM-based splice site scores.
   - `Pipeline_Get_Chain_Aln.sh`: bash pipeline to obtain liftOver files.
   - `Get_Results_From_Liftover.pl`: used to parse the pairwise liftover outputs
