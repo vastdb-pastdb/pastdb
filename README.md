@@ -1,6 +1,6 @@
 ## PastDB scripts and associated data
 
-Code and data associated with the PastDB web and publication (Martin et al, 2020). For any further enquires, please feel free to contact Manuel Irimia (mirimia@gmail.com) and/or Guiomar Martin (guiomarm@igc.gulbenkian.pt)
+Code and data associated with the PastDB web and publication (Martin et al, 2020). For any further enquires, please feel free to contact Manuel Irimia (mirimia@gmail.com) and/or Guiomar Martin (guiomarm@igc.gulbenkian.pt). Aditional information can be found at pastdb.crg.eu.
 
 ------
   
