@@ -1,6 +1,10 @@
 ## PastDB scripts and associated data
 
-Code and data associated with the PastDB web and publication (Martin et al, 2021). For any further enquires, please feel free to contact Manuel Irimia (mirimia@gmail.com) and/or Guiomar Martin (guiomarm@igc.gulbenkian.pt). Additional information can be found in [PastDB](http://pastdb.crg.eu).
+Code and data associated with the PastDB web and publication ([Martin et al, *Genome Biol* 2021](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02258-y)). For any further enquires, please feel free to contact Manuel Irimia (mirimia@gmail.com) and/or Guiomar Martin (guiomarm@igc.gulbenkian.pt). Additional information can be found in [PastDB](http://pastdb.crg.eu).
+
+
+Full citation:
+Martin, G., Márquez, Y., Duque, P., Irimia, M. (2021). Alternative splicing landscapes in <i>Arabidopsis thaliana</i> across tissues and stress conditions highlight major functional differences with animals. *Genome Biol*, 22:35.
 
 ------
   
