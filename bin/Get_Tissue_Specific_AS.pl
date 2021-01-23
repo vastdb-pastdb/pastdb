@@ -47,7 +47,7 @@ GetOptions(               "min_dPSI=i" => \$min_dPSI,
     );
 
 if (!defined($ARGV[0]) || $helpFlag){
-    die "\nUsage: get_tisAS_v5-PastDB.pl INCLUSION_LEVELS_FULL-root.tab -g Tissue_groups [options]
+    die "\nUsage: Get_Tissue_Specific_AS.pl INCLUSION_LEVELS_FULL-root.tab -g Tissue_groups [options]
 
 Identifies tissue-specific events by assessing non-overlapping PSI of groups
 
@@ -152,7 +152,11 @@ if ($groups){
     close GROUPS;
 }
 
-open (I, $ARGV[0]); # INCL table
+if ($ARGV[0]=~/\.gz$/){
+   open (I, "gunzip -c $ARGV[0] | ") || die "Cannot open INCL $ARGV[0]";
+} else {
+   open (I, $ARGV[0]) || die "Cannot open INCL $ARGV[0]"; # INCL table
+}
 my $head=<I>;
 chomp($head);
 my @head=split(/\t/,$head);
